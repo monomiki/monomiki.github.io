@@ -89,6 +89,12 @@ body.slideIn:after{
     opacity: 0;
 }
 
+@media screen and (min-width:960px){
+    #content{
+        padding: 28px;
+    }
+}
+
 .appear {
     animation: appear linear .4s forwards;
 }
@@ -115,11 +121,14 @@ body.slideIn:after{
     height: auto;
 }
 
+#title,#description,#link,#link h2,#CV{
+    font-size: min(5.13vw, 24px);
+}
+
 #title {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
-    font-size: min(5.13vw, 28px);
     letter-spacing: 0.03em;
     line-height: 1.5;
 }
@@ -129,14 +138,12 @@ body.slideIn:after{
     margin-bottom: 38px;
     width: 85%;
     letter-spacing: 0.01em;
-    font-size: min(5.13vw, 28px);
     line-height: 1.5;
     animation-delay: .2s;
 }
 
 #link {
     letter-spacing: 0.01em;
-    font-size: min(5.13vw, 28px);
     line-height: 1.1;
     margin-bottom: 38px;
 }
@@ -165,7 +172,6 @@ body.slideIn:after{
     position: relative;
     display: inline-block;
     letter-spacing: 0.01em;
-    font-size: min(5.33vw, 28px);
     line-height: 1.1;
 }
 
@@ -174,7 +180,6 @@ body.slideIn:after{
 }
 
 #CV {
-    font-size: min(5.13vw, 28px);
 }
 
 .clock {
@@ -185,17 +190,23 @@ body.slideIn:after{
     font-size: 10px;
 }
 
-footer {
+.ly_footer {
     margin-top: auto;
     position: relative;
 }
 
 #copyright {
-    animation-delay: 1s;
     position: relative;
     letter-spacing: -0.05em;
     font-size: 10px;
     line-height: 1.1;
+}
+
+@media screen and (max-width:300px){
+    .copyright_span03 {
+        display: block;
+        height: 10px;
+    }
 }
 
 .skew {
@@ -207,51 +218,51 @@ footer {
         transform: none;
     }
 
-    33% {
+    20% {
         transform: none;
     }
 
-    33.3% {
-        transform: skewX(30deg);
+    20.1% {
+        transform: skewX(45deg);
     }
 
-    33.6% {
-        transform: skewX(-30deg);
+    20.4% {
+        transform: skewX(-45deg);
     }
 
-    33.9% {
+    20.7% {
         transform: none;
     }
 
-    66% {
+    60% {
         transform: none;
     }
 
-    66.3% {
+    60.3% {
         transform: skewX(5deg);
     }
 
-    66.6% {
+    60.6% {
         transform: skewX(-5deg);
     }
 
-    66.9% {
+    60.9% {
         transform: none;
     }
 
-    77% {
+    90% {
         transform: none;
     }
 
-    77.3% {
+    90.3% {
         transform: skewX(15deg);
     }
 
-    77.6% {
+    90.6% {
         transform: skewX(-15deg);
     }
 
-    77.9% {
+    90.9% {
         transform: none;
     }
 }
