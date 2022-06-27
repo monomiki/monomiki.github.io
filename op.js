@@ -5,8 +5,8 @@
   window.addEventListener('DOMContentLoaded', () => {
 
     const body = document.body;
-    const opLogo = document.querySelector("#opLogo");
-    const content = document.querySelector("#content");
+    const opLogo = document.querySelector(".opLogo");
+    const content = document.querySelector(".content");
 
     window.setTimeout(function(){
       opLogo.classList.add('none');

@@ -61,7 +61,7 @@ body.slideIn:after{
     }
 }
 
-#opLogo{
+.opLogo{
     width:20vw;
     max-width: 200px;
     position: absolute;
@@ -70,27 +70,26 @@ body.slideIn:after{
     left:50%;
     transform-origin: center;
     transform: translateX(-50%) translateY(-50%);
-    /* animation: meimetsu 1s infinite; */
 }
 
-#wrapper {
+.wrapper {
     padding: 12px;
     height: 100%;
-    border-radius: 5px;
 }
 
-#content {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 12px;
-    min-height: 100%;
+    height: 100%;
     border: dashed 1px;
+    border-radius: 5px;
     opacity: 0;
 }
 
 @media screen and (min-width:960px){
-    #content{
+    .content{
         padding: 28px;
     }
 }
@@ -109,23 +108,23 @@ body.slideIn:after{
     }
 }
 
-#logoContainer {
+.logoContainer {
     position: absolute;
     top: 36px;
     right: 38px;
-    width: 40px;
+    width: min(9.66vw,40px);
 }
 
-#logo {
+.logo {
     width: 100%;
     height: auto;
 }
 
-#title,#description,#link,#link h2,#CV{
+.title,.description,.link,.link h2,.CV{
     font-size: min(5.13vw, 24px);
 }
 
-#title {
+.title {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
@@ -133,7 +132,7 @@ body.slideIn:after{
     line-height: 1.5;
 }
 
-#description {
+.description {
     position: relative;
     margin-bottom: 38px;
     width: 85%;
@@ -142,17 +141,17 @@ body.slideIn:after{
     animation-delay: .2s;
 }
 
-#link {
+.link {
     letter-spacing: 0.01em;
     line-height: 1.1;
     margin-bottom: 38px;
 }
 
-#link a {
+.link a {
     color: #000;
 }
 
-#link li {
+.link li {
     position: relative;
     display: flex;
     margin-bottom: 10px;
@@ -168,38 +167,47 @@ body.slideIn:after{
     }
 }
 
-#link h2 {
+.link h2 {
     position: relative;
     display: inline-block;
     letter-spacing: 0.01em;
     line-height: 1.1;
 }
 
-#link p {
+.link p {
     display: inline-block;
 }
 
-#CV {
+.CV {
 }
 
 .clock {
     position: absolute;
     right: 0;
-    bottom: 3px;
+    bottom: 1px;
     text-align: right;
     font-size: 10px;
+    line-height: 1.1;
 }
 
-.ly_footer {
+.footer {
     margin-top: auto;
     position: relative;
 }
 
-#copyright {
+.copyright {
     position: relative;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.01em;
     font-size: 10px;
     line-height: 1.1;
+}
+
+.copyright_span01{
+    padding:0 1px;
+}
+
+.copyright_span02 {
+    padding: 0 3px;
 }
 
 @media screen and (max-width:300px){
