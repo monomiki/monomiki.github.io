@@ -86,7 +86,9 @@ body.slideIn:after {
     height: 100%;
     /* wrapperの上下padding分引く */
     min-height: calc(100vh - 24px);
-    min-height: calc(100svh - 24px);
+    min-height: calc(var(--vh,100vh) - 24px);
+    /* for iOS */
+    min-height: calc(100svh - 24px); 
     border: dashed 1px;
     border-radius: 5px;
     opacity: 0;

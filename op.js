@@ -1,8 +1,19 @@
 (() => {
-
-  //OPアニメーション
-
   window.addEventListener('DOMContentLoaded', () => {
+
+    //高さ設定
+    
+    function setHeight(){
+      let height = window.innerHeight;
+      document.documentElement.style.setProperty('--vh', `${height}px`);
+    }
+
+    setHeight();
+
+    window.addEventListener('resize',setHeight);
+
+
+    //OPアニメーション
 
     const body = document.body;
     const opLogo = document.querySelector(".opLogo");
