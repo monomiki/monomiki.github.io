@@ -80,6 +80,17 @@ a:hover {
     margin-bottom: 3em;
 }
 
+.works a {
+    display: inline-block;
+    padding: 0 .15em;
+    text-decoration: none;
+}
+
+.works a:hover {
+    background-color: #ffff99;
+    opacity: 1;
+}
+
 .footer {
     position: relative;
     display: flex;
