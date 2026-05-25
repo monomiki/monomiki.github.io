@@ -7,6 +7,7 @@
 :root {
     --text-color: #0066ff;
     --text-size: min(5.13vw, 24px);
+    --footer-text-size: clamp(10px, 2.45vw, 24px);
 }
 
 html,
@@ -57,13 +58,18 @@ a:hover {
 .title,
 .description,
 .mail,
-.works,
-.footer,
-.clock,
-.copyright {
+.works {
     font-size: var(--text-size);
     letter-spacing: .01em;
     line-height: 1.5;
+}
+
+.footer,
+.clock,
+.copyright {
+    font-size: var(--footer-text-size);
+    letter-spacing: .01em;
+    line-height: 1.2;
 }
 
 .mainText {
@@ -81,6 +87,8 @@ a:hover {
 
 .mail {
     margin-bottom: 3em;
+    pointer-events: none;
+    user-select: text;
 }
 
 .works a {
@@ -99,11 +107,12 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 16px;
+    gap: 8px;
 }
 
 .copyright {
     display: block;
+    min-width: 0;
 }
 
 .clock {
