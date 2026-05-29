@@ -124,11 +124,22 @@ a:hover {
     text-decoration: none;
 }
 
+.aboutLink a:link,
+.aboutLink a:visited,
+.backLink a:link,
+.backLink a:visited,
+.works a:link,
+.works a:visited {
+    text-decoration: none;
+}
+
 .aboutLink a:hover,
 .backLink a:hover,
 .works a:hover {
     background-color: #ffff99;
+    box-shadow: 0 0 0 .12em #ffff99;
     opacity: 1;
+    text-decoration: none;
 }
 
 .footer {
