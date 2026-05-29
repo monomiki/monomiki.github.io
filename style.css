@@ -99,7 +99,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-.aboutPage .title {
+.aboutPage .about {
     margin-bottom: 3em;
 }
 
@@ -112,8 +112,12 @@ a:hover {
     margin-bottom: 1em;
 }
 
+.aboutHeading {
+    margin-bottom: 1.5em;
+}
+
 .aboutBlock + .aboutBlock {
-    margin-top: 1.5em;
+    margin-top: 3em;
 }
 
 .aboutLink a,
