@@ -58,9 +58,11 @@ a:hover {
 .title,
 .description,
 .mail,
+.aboutLink,
 .about,
 .about h2,
-.works {
+.works,
+.backLink {
     font-size: var(--text-size);
     letter-spacing: .01em;
     line-height: 1.5;
@@ -93,6 +95,14 @@ a:hover {
     user-select: text;
 }
 
+.aboutLink {
+    margin-bottom: 0;
+}
+
+.aboutPage .title {
+    margin-bottom: 3em;
+}
+
 .about {
     margin-bottom: 3em;
     max-width: 36em;
@@ -106,12 +116,16 @@ a:hover {
     margin-top: 1.5em;
 }
 
+.aboutLink a,
+.backLink a,
 .works a {
     display: inline-block;
     padding: 0 .15em;
     text-decoration: none;
 }
 
+.aboutLink a:hover,
+.backLink a:hover,
 .works a:hover {
     background-color: #ffff99;
     opacity: 1;
