@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon.svg">
+
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:title" content="CONTACT | 生物 / IKIMONO" />
+  <meta property="og:url" content="イキモノ.コム/contact.html" />
+  <meta property="og:image" content="https://www.xn--ecks3h9c.xn--tckwe/image/ogp.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Contact IKIMONO" />
+  <meta property="og:site_name" content="生物 / IKIMONO" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Contact IKIMONO" />
+  <meta name="twitter:title" content="CONTACT | 生物 / IKIMONO" />
+  <meta name="twitter:image" content="https://www.xn--ecks3h9c.xn--tckwe/image/ogp.png" />
+  <meta name="twitter:site" content="@eyemu_" />
+  <meta name="twitter:domain" content="イキモノ.コム">
+
+  <link rel="stylesheet" href="https://use.typekit.net/wfc2hlb.css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>CONTACT | 生物 / IKIMONO</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <main class="mainText contactPage">
+        <h1 class="title">CONTACT</h1>
+        <form class="contactForm" action="mailto:IKIMONO190@gmail.com" method="post" enctype="text/plain">
+          <div class="formField">
+            <label for="name">お名前</label>
+            <input id="name" name="お名前" type="text" autocomplete="name" required>
+          </div>
+          <div class="formField">
+            <label for="organization">会社名・団体名</label>
+            <input id="organization" name="会社名・団体名" type="text" autocomplete="organization">
+          </div>
+          <div class="formField">
+            <label for="email">メールアドレス</label>
+            <input id="email" name="メールアドレス" type="email" autocomplete="email" required>
+          </div>
+          <div class="formField">
+            <label for="category">お問い合わせ種別</label>
+            <select id="category" name="お問い合わせ種別" required>
+              <option value="">選択してください</option>
+              <option value="制作依頼">制作依頼</option>
+              <option value="作品について">作品について</option>
+              <option value="取材・コラボ">取材・コラボ</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+          <div class="formField">
+            <label for="subject">件名</label>
+            <input id="subject" name="件名" type="text" required>
+          </div>
+          <div class="formField">
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="お問い合わせ内容" rows="7" required></textarea>
+          </div>
+          <label class="formConsent">
+            <input name="送信同意" type="checkbox" value="同意しました" required>
+            <span>入力内容を確認し、送信することに同意します</span>
+          </label>
+          <button class="submitButton" type="submit">SEND</button>
+        </form>
+        <p class="backLink"><a href="./">BACK</a></p>
+      </main>
+      <footer class="footer">
+        <small class="copyright">COPYRIGHT© 生物 / IKIMONO</small>
+        <div class="clock">
+          <span class="date"></span> <span class="time"></span>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="./clock.js"></script>
+</body>
+
+</html>
