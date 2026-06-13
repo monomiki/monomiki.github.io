@@ -108,6 +108,12 @@ a:hover {
     margin-bottom: 3em;
 }
 
+.contactPage .title,
+.contactPage .contactForm,
+.contactPage .backLink {
+    font-size: var(--footer-text-size);
+}
+
 .about {
     margin-bottom: 3em;
     max-width: 36em;
