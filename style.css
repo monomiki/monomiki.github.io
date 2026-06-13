@@ -62,7 +62,9 @@ a:hover {
 .about,
 .about h2,
 .works,
-.backLink {
+.contactLink,
+.backLink,
+.contactForm {
     font-size: var(--text-size);
     letter-spacing: .01em;
     line-height: 1.5;
@@ -95,11 +97,14 @@ a:hover {
     user-select: text;
 }
 
-.aboutLink {
+.aboutLink,
+.works,
+.contactLink {
     margin-bottom: 0;
 }
 
-.aboutPage .title {
+.aboutPage .title,
+.contactPage .title {
     margin-bottom: 3em;
 }
 
@@ -118,7 +123,8 @@ a:hover {
 
 .aboutLink a,
 .backLink a,
-.works a {
+.works a,
+.contactLink a {
     display: inline-block;
     padding: 0 .15em;
     text-decoration: none;
@@ -129,17 +135,90 @@ a:hover {
 .backLink a:link,
 .backLink a:visited,
 .works a:link,
-.works a:visited {
+.works a:visited,
+.contactLink a:link,
+.contactLink a:visited {
     text-decoration: none;
 }
 
 .aboutLink a:hover,
 .backLink a:hover,
-.works a:hover {
+.works a:hover,
+.contactLink a:hover {
     background-color: #ffff99;
     box-shadow: 0 0 0 .12em #ffff99;
     opacity: 1;
     text-decoration: none;
+}
+
+.contactForm {
+    display: grid;
+    gap: 1em;
+    margin-bottom: 3em;
+    max-width: 34em;
+}
+
+.formField {
+    display: grid;
+    gap: .25em;
+}
+
+.formField label,
+.formConsent {
+    line-height: 1.4;
+}
+
+.formField input,
+.formField select,
+.formField textarea {
+    width: 100%;
+    border: 1px solid var(--text-color);
+    border-radius: 0;
+    padding: .3em .4em;
+    color: var(--text-color);
+    background-color: transparent;
+    outline: none;
+}
+
+.formField textarea {
+    resize: vertical;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+    background-color: #ffff99;
+}
+
+.formConsent {
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+.formConsent input {
+    flex: 0 0 auto;
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    accent-color: var(--text-color);
+}
+
+.submitButton {
+    justify-self: start;
+    border: 1px solid var(--text-color);
+    border-radius: 0;
+    padding: .2em .6em;
+    color: var(--text-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.submitButton:hover,
+.submitButton:focus-visible {
+    background-color: #ffff99;
+    box-shadow: 0 0 0 .12em #ffff99;
+    outline: none;
 }
 
 .footer {
